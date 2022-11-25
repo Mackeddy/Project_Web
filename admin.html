@@ -16,12 +16,30 @@
     <title>T9tourist</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="/img/Cream Female Yoga Entrepreneurship Logo.png" href="" alt="">
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="/img/Cream Female Yoga Entrepreneurship Logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul class="navbar">
+                    <li class="head_menu"><a class="menu_title" href="/index.html"><b>Trang chủ</b></a></li>
+                    <li class="head_menu"><a class="menu_title" href=""><b>Thông tin</b></a></li>
+                    <li class="head_menu">
+                        <a class="menu_title" href=""><b>Tour</b> <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown__menu">
+                            <li><a href="/tourvn.html">Tour Trong Nước</a></li>
+                            <li><a href="/tournn.html">Tour Ngoài Nước</a></li>
+                        </ul>
+                    </li>
+                    <li class="head_menu"><a class="menu_title" href=""><b>Pages</b></a></li>
+                    <li class="head_menu"><a class="menu_title" href="/log.html"><b>Đăng nhập</b> <i class="fa-light fa-user"></i></a></li>
+                </ul>
+            </div>
         </div>
+    </header>
     </div>
-
+<div class="former">
     <table id="tabledata">
         <tr>
             <th>ID</th>
@@ -34,10 +52,11 @@
             <th id="action">Action</th>
         </tr>
     </table>
-        <button class="btn btn_primary" type="submit" onclick="return renderCustomer()">Mở dữ liệu </button>
 
+        <button class="btn btn_primary" type="submit" onclick="return renderCustomer()">Mở dữ liệu </button>
+    </div>
         <div  id="modal">
-            <div class="modal_overlay"></div>
+            <div class="modal_overlay">
                 <div class="modal_body">
                  <div class="register_tour">
                     <div class="register_tour_form">
@@ -60,11 +79,12 @@
                                 <span id="error_date" class="span_loi"></span>
                             </div>
                             <div class="register_tour_group">
+                                Địa Điểm:   <input type="text" class="register_tour_input" id="place" placeholder="VD: Đà Lạt" >
+                                <span id="error_place" class="span_loi"></span>
+                               </div>
+                            <div class="register_tour_group">
                             Số người:     <input type="number" class="register_tour_input" id="people" placeholder="VD:2,3,4">
                             <span id="error_people" class="span_loi"></span>
-                            </div>
-                            <div class="register_tour_group">
-                                Địa điểm: <input type="text" class="register_tour_input" id="diadiem">
                             </div>
                             <div class="register_tour_group">
                                 <input type="hidden" class="register_tour_input" id="index">    
@@ -77,4 +97,48 @@
                 </div>
             </div>
        </div>
+       </div>
+       <footer>
+        <div class="footer">
+            <div class="link">
+                <h3>Hỗ trợ</h3>
+                <ul>
+                    <li><a href="">Trung tâm trợ giúp</a></li>
+                    <li><a href="">Phản hồi COVID-19 với chúng tôi</a></li>
+                    <li><a href="">Tùy chọn hủy bỏ</a></li>
+                    <li><a href="">Thông tin an toàn</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Công ty</h3>
+                <ul>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Blog cộng đồng</a></li>
+                    <li><a href="">Nghề nghiệp</a></li>
+                    <li><a href="">Chính sách quyền riêng tư</a></li>
+                    <li><a href="">Điều khoản và dịch vụ</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Giao tiếp</h3>
+                <ul>
+                    <li><a href="">Quan hệ đối tác</a></li>
+                    <li><a href="">Câu hỏi thường gặp</a></li>
+                    <li><a href="">Liên lạc</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Liên lạc với chúng tôi</h3>
+                <ul class="icon">
+                    <li><a href="https://www.facebook.com/"><i style="color: #4267B2;" class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/"><i style="color: #F53844;" class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com/?lang=vi"><i style="color: #1DA1F2" class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.youtube.com/"><i style="color: #FF0000;" class="fa-brands fa-youtube"></i>Youtube</a></li>
+                    <li><a href="#"><i style="color: #00aff0 ;"class="fa-brands fa-skype"></i> Skype</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </footer>
+</body>
 </body>
