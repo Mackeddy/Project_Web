@@ -127,6 +127,15 @@ header{
     margin-bottom: 50px;
     border-bottom: 1px solid black;
 }
+.list_tour{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.slideshow{
+    display: flex;
+    flex-direction: column;
+}
 .in4_tour{
     display: flex;
     flex-direction: row;
@@ -163,22 +172,29 @@ header{
 button  :hover{
     border: 1px solid black;
 }
-.page a{
+.page {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
     border: none;
+    display: flex;
+    flex-direction: row;
 }
-.page a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-  .page a:hover:not(.active) {
-    background-color: #ddd;
-  }
-.list_tour2{
+.slide{
+    background-color: grey;
+    width: 25px;
+    height: 25px;
+    margin-inline: 5px;
+}
+.active{
+    background-color: #88CDF6 ;
+}
+#p2{
+    display: none;
+}
+#p3{
     display: none;
 }
 .footer{
