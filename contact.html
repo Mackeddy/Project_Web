@@ -1,0 +1,197 @@
+<!--3121410065 Hoang Gia Bach-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_get_special.css">
+    <title>Liên hệ</title>
+</head>
+<style>
+*{
+     margin:0;
+     padding: 0;
+     font-family: dm sans,sans-serif;
+     box-sizing: border-box;
+ }
+
+.container{
+     width: 100%;
+     height: auto;
+     display:flex;
+     z-index: 100;
+ }
+.containerinfo{
+    position: absolute;
+     width: 350px;
+     height:100%;
+     background: #88CDF6;
+     z-index: 1;
+     padding: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ .containerinfo h2
+ {
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0;
+ }
+ .containerinfo li{
+     position: relative;
+     list-style: none;
+     display: flex;
+     margin: 20px 0;
+     cursor: pointer;
+     align-items: flex-start;
+ }
+ .containerinfo li span{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 20px;
+ }
+ .sci{
+     position: relative;
+     display:flex;
+ }
+ .sci li{
+     list-style: none;
+     margin-right: 15px;
+ }
+ .sci li a{
+     text-decoration: none;
+     opacity: 0.5;
+     color: #0084ff ;
+     font-size: 32px;
+ }
+ .sci li:hover a{
+     opacity: 1;
+ }
+ .containerForm{
+     position: absolute;
+     padding: 70px 50px;
+     background: #fff;
+     margin-left: 150px;
+     padding-left: 250px;
+     width: calc(100% - 150px);
+     height: 75%;
+ }
+ .containerForm h2{
+     color: #0f3959;
+     font-size: 24px;
+     font-weight: 500;
+ }
+ .formBox{
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding-top: 30px;
+ }
+ .inputBox{
+     position: relative;
+     margin: 0 0 35px 0;
+ }
+ .inputBox.w50{
+     width: 47%;
+ }
+ .inputBox.w100{
+     width: 100%;
+ }
+ .inputBox input,.inputBox textarea{
+     width: 100%;
+     padding: 5px 0;
+     resize: none;
+     font-size: 18px;
+     font-weight: 400;
+     color: #333;
+     border: none;
+     border-bottom: 1px solid #777;
+     outline: none;
+ }
+ .inputBox textarea{
+     min-height: 120px;
+ }
+ .inputBox input[type="submit"]{
+     position: relative;
+     cursor: pointer;
+     background: #0f3959;
+     color: #fff;
+     border: none;
+     max-width: 150px;
+     padding: 12px;
+ }
+ .inputBox input[type="submit"]:hover{
+     background:  #0084ff;
+ }
+</style>
+<body>
+    <div class="container">
+        <div class="containerinfo">
+            <div>
+    <h2> Thông Tin Liên Lạc</h2>
+    <section>
+    <ul class="info">
+        <li>
+            <span><i class="fa-light fa-location-dot"></i></span>
+           <span> 273 An Dương Vương<br/>
+            Phường 3, Quận 5<br/>
+            Thành Phố Hồ Chí Minh<br/></span>
+        </li>
+        <li>
+            <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+            <span>028 3835 4409</span>
+        </li>
+        <li>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span>vanphong@sgu.edu.vn</span>
+        </li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><i style="color: #4267B2;" class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i style="color: #F53844;" class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i style="color: #1DA1F2" class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i style="color: #FF0000;" class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i style="color: #00aff0 ;"class="fa-brands fa-skype"></i></a></li>
+    </ul>
+</div>
+    </div>
+</section>
+<div class="containerForm">
+    <h2>Gửi Lời Nhắn Cho Chúng Tôi</h2>
+    <div class="formBox">
+        <div class="inputBox w50">
+    <span>Họ</span> 
+    <input type="text" name="" required>
+    </div>
+    <div class="inputBox w50">
+    <span>Tên</span> 
+    <input type="text" name="" required>
+    <br/>
+    </div>
+    <div class="inputBox w50">
+    <span>Email</span>
+    <input type="text" name="" required>
+    </div>
+    <div class="inputBox w50">
+    <Span>Số Điện Thoại </Span>
+    <input type="text" name="" required>
+    </div>
+    <div class="inputBox w100">
+    <span>Lời Nhắn Của Bạn </span>
+    <textarea name="" required></textarea>
+    <br/>
+    </div>
+    <div class="inputBox w100">
+    <input type="submit" value="Gửi">
+    </div>
+    </div>
+</body>
+</html>

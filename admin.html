@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_get_special.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/admin.js"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <title>T9tourist</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/img/Cream Female Yoga Entrepreneurship Logo.png" href="" alt="">
+        </div>
+    </div>
+
+    <table id="tabledata">
+        <tr>
+            <th>ID</th>
+            <th width="5cm">Full name</th>
+            <th>Email</th>
+            <th>SĐT</th>
+            <th>Ngày</th>
+            <th>Số người</th>
+            <th id="action">Action</th>
+        </tr>
+    </table>
+        <button class="btn btn_primary" type="submit" onclick="return renderCustomer()">Mở dữ liệu </button>
+
+        <div  id="modal">
+            <div class="modal_overlay"></div>
+                <div class="modal_body">
+                 <div class="register_tour">
+                    <div class="register_tour_form">
+                       <div class="register_tour_container">
+                            <div class="register_tour_group">
+                             Họ và tên:  <input type="text" class="register_tour_input" id="fullname" placeholder="VD: Nguyễn Văn A">
+                             <span id="error_fullname" class="span_loi"></span>
+                            </div>
+                            <div class="register_tour_group">
+                                Email:&ensp; &ensp;&ensp; <input type="email" class="register_tour_input" id="email" placeholder="VD: abc@gmail.com ">
+                                   <span id="error_email" class="span_loi"></span>
+                            </div>
+                            <div class="register_tour_group">
+                             Điện thoại:   <input type="text" class="register_tour_input" id="sdt" placeholder="VD: 0123456789" >
+                             <span id="error_sdt" class="span_loi"></span>
+                            </div>
+                            <div class="register_tour_group">
+                                Ngày đi:&ensp;&ensp;
+                                <input type="date" class="register_tour_input" id="date" >
+                                <span id="error_date" class="span_loi"></span>
+                            </div>
+                            <div class="register_tour_group">
+                            Số người:     <input type="number" class="register_tour_input" id="people" placeholder="VD:2,3,4">
+                            <span id="error_people" class="span_loi"></span>
+                            </div>
+                            <div class="register_tour_group">
+                                <input type="hidden" class="register_tour_input" id="index">    
+                            </div>
+                            <div class="register_tour_controls">
+                                <button class="btn btn_primary" type="submit" onclick="changeCustomer()">Cập nhật</button>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+</body>

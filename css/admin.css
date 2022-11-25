@@ -1,0 +1,68 @@
+.header{
+    float: left;
+}
+
+body {
+    background-color: aliceblue;
+  }
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {background-color: #417592;}
+
+table{
+    font-weight: 700;
+    width: 80%;
+    color: black;
+    margin-left: 10%;
+    background-color: #a2d4f1;
+    font-size: 25px;
+}
+
+td{
+    text-align: center;
+    height: 100px;
+    
+}
+
+th{
+    height: 150px;
+}
+
+button{
+    height: 50px;
+    padding: 15px 35px;
+    padding-bottom: 40px;
+    background-color: #a2d4f1;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    border-radius: 70px;
+    margin-left: 43%;
+    margin-top: 5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#action button{
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 10px; 
+    margin-left: 10%;
+    background-color: gainsboro;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    border-radius: 70px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: center;
+}
+

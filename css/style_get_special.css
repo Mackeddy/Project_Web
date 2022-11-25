@@ -1,0 +1,111 @@
+.offers{
+    width: 95%;
+    background-image: url("https://tophinhanhdep.com/wp-content/uploads/2021/10/Airplane-4K-Wallpapers.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+ }
+.offers .content{
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    padding-left: 25px;
+    padding-top: 40px;
+    float: right;
+    
+}
+.offers .content h1{
+    font-size: 40px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+ .content p{
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+}
+.form_offers{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6% auto;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 70px;
+    box-shadow: 0 1px 2px #00000014, 0 4px 12px #0000000d;
+    gap: 15px;
+}
+.form_offers input{
+    width: 200px;
+    height: 15px;
+    display: block;
+    background:transparent;
+    border: none;
+    outline: none;
+    color: grey;
+    font-size: 15px;
+    padding-left: 20px;
+    padding:auto;
+    transform: translateY(-50%);
+}
+::placeholder{
+    color: gray;
+}
+.Dk{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+button{
+    height: 50px;
+    padding: 15px 35px;
+    background-color: #88CDF6;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 70px;
+    margin-left: 143px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #dedede;
+    background-color: #f7f8fa;
+    box-sizing: border-box;
+}
+.footer ul{
+    display: block;
+    margin-top: 30px;
+    list-style-type: none;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.link{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.link h3{
+    padding-left: 20px;
+    margin-top: 50px;
+}
+.link a{
+    text-decoration: none;
+    color: grey;
+    transition: 0.4s ease;
+}

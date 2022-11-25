@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Đà Lạt</title>
+    <link rel="stylesheet" href="/trang_dk_tour.css"><!--địa chỉ css-->
+    <script src="./trang_dk_tour.js"></script> <!--địa chỉ js-->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+</head>
+<body>
+    <div class="div_tong">
+        <header>
+            <div class="header" >
+                <div class="logo">
+                    <img src="/img/Cream Female Yoga Entrepreneurship Logo.png" href="" alt="">
+                </div>
+                <div class="menu">
+                    <ul class="navbar">
+                        <li class="head_menu"><a class="menu_title" href=""><b>Trang chủ</b></a></li>
+                        <li class="head_menu"><a class="menu_title" href="./about.html"><b>Thông tin</b></a></li>
+                        <li class="head_menu">
+                            <a class="menu_title" href=""><b>Tour</b> <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown__menu">
+                                <li><a href="tourvn.html">Tour Trong Nước</a></li>
+                                <li><a href="tournn.html">Tour Ngoài Nước</a></li>
+                            </ul>
+                        </li>
+                        <li class="head_menu"><a class="menu_title" href="./contact.html"><b>Liên hệ</b></a></li>
+                        <li class="head_menu"><a class="menu_title" href="./log.html"><b>Đăng nhập</b> <i class="fa-light fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!--giữa-->
+        <div class="div_giua_tren">
+            <img src="/img/anhThanhToan.png" style="height: 100%; width:100%">
+        </div>
+        <div class="div_giua">
+           
+            <div class="div_giua_trai">
+                <div class="div_giua_trai_tren">
+                    THÔNG TIN KHÁCH HÀNG
+                </div>
+                    <div class="register_tour_group">
+                    Họ và tên:  <input type="text" class="register_tour_input" id="fullname" placeholder="VD: Nguyễn Văn A">
+                    
+                   </div>
+                   <span id="error_fullname" class="span_loi"></span>
+                   <div class="register_tour_group">
+                       Email:&ensp; &ensp;&ensp; <input type="email" class="register_tour_input" id="email" placeholder="VD: abc@gmail.com ">
+                   </div>
+                   <span id="error_email" class="span_loi"></span>
+                   <div class="register_tour_group">
+                    Điện thoại:   <input type="text" class="register_tour_input" id="sdt" placeholder="VD: 0123456789" >
+                   </div>
+                  &ensp;&ensp;&ensp;&ensp; <span id="error_sdt" class="span_loi"></span>
+                   <div class="register_tour_group">
+                    Địa chỉ:  &ensp;&ensp;<input type="text" class="register_tour_input" id="place" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố. " >
+                   </div>
+                   <span id="error_place" class="span_loi"></span>
+            </div>
+            <div class="div_giua_phai">
+                <div class="div_giua_phai_tren">
+                    THÔNG TIN TOUR 
+                </div>
+                <div class="div_giua_phai_giua">
+                    <div class="div_hinh_giua"><img src="./img/recommended5.jpg" style="width:100%;  height:100%;"></div>
+                    <div class="div_thong_tin_giua">
+                        <br>
+                       <h2> Du lịch Phố cổ Hội An (3 ngày 2 đêm)</h2><br><br>
+                       Chọn ngày khởi hành:
+                        <input type="date"  id="date" >
+                        <span id="error_date" class="span_loi"></span>
+                        <br><br>
+                        Số người:  
+                         <input type="number" onchange="tinh_tong()" id="people" placeholder="VD:2,3,4">
+                        <span id="error_people" class="span_loi"></span><br><br>
+                        <h4>Giá thành: <span id="hiphai"> 9,000,000</span>VNĐ/người</h4>
+                        <hr>
+                        <div class="register_tour_group">
+                            <h2>TỔNG:</h2>
+                             <span id="tinh_tong"></span>VNĐ 
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="div_giua_phai_duoi">
+                    <button class="btn_primary" type="submit" onclick=" return savetour()">HOÀN THÀNH</button>
+                </div>
+            </div>
+        </div>
+        <!--duoi-->
+        <footer>
+            <div class="footer">
+                <div class="link">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="">Trung tâm trợ giúp</a></li>
+                        <li><a href="">Phản hồi COVID-19 với chúng tôi</a></li>
+                        <li><a href="">Tùy chọn hủy bỏ</a></li>
+                        <li><a href="">Thông tin an toàn</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Công ty</h3>
+                    <ul>
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Blog cộng đồng</a></li>
+                        <li><a href="">Nghề nghiệp</a></li>
+                        <li><a href="">Chính sách quyền riêng tư</a></li>
+                        <li><a href="">Điều khoản và dịch vụ</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Giao tiếp</h3>
+                    <ul>
+                        <li><a href="">Quan hệ đối tác</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                        <li><a href="">Liên lạc</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Liên lạc với chúng tôi</h3>
+                    <ul class="icon">
+                        <li><a href="https://www.facebook.com/"><i style="color: #4267B2;" class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/"><i style="color: #F53844;" class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://twitter.com/?lang=vi"><i style="color: #1DA1F2" class="fa-brands fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.youtube.com/"><i style="color: #FF0000;" class="fa-brands fa-youtube"></i>Youtube</a></li>
+                        <li><a href="#"><i style="color: #00aff0 ;"class="fa-brands fa-skype"></i> Skype</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        </footer>
+    </div>
+</body>
+</html>
