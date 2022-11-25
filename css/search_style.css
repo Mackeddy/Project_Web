@@ -1,0 +1,243 @@
+
+.search{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top: 270px;
+}
+.search-content-items{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(221, 221, 221, 0.5);
+    padding: 12px;
+    border-radius: 5px;
+
+}
+.search-content-item{
+    height: 50px;
+    background-color: #fff;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.search-content-item input{
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.search-content-item i{
+    color: #0000ff;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+.search-content-item:last-child{
+    width: 130px;
+}
+.search-content-item button{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    color: #fff;
+    background-color: #0000ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+.search-content-item button:hover{
+    background-color: #00bfff;
+    color:rgba(13, 11, 11, 0.978);
+}
+/*-------------------Ngày----------------------*/
+.flatpickr-months .flatpickr-month{
+    background-color: #0000ff!important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months{
+    background-color: #0000ff!important;
+}
+.flatpickr-weekdays{
+    background-color: #0000ff!important;
+}
+.flatpickr-weekday{
+    background: #0000ff!important;
+    color: #fff!important;
+}
+.flatpickr-calendar .arrowTop:after{
+    border-bottom-color: #0000ff!important;
+}
+.flatpickr-calendar .arrowBottom:after{
+    border-top-color: #0000ff!important;
+}
+.flatpickr-day.selected{
+    background: #0000ff;
+}
+
+/*--------------------end Ngày----------------*/
+
+/* -----------------địa điểm-------------------*/
+.autobox{
+    position: absolute;
+    top: 100%;
+    width: 25%;
+    background-color:#fff;
+    background-color:rgba(221, 221, 221, 0.5);
+    overflow-y: auto;
+}
+.autobox li{
+    list-style: none;
+    padding: 6px 0px 6px 36px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    display: none;
+}
+.autobox li:hover{
+    color: #0000ff;
+}
+.autobox.active li{
+    display: block;
+}
+/*-----------------------end địa điểm--------------------*/
+
+/*-----------------------Ngày----------------------------*/
+
+
+
+
+
+
+
+/*------------------------end Ngày-----------------------*/
+
+/*-------------------------Người-------------------------*/
+.number-people{
+    cursor: pointer;
+
+}
+.number-box{
+    position: absolute;
+    top: 100%;
+    width: 25%;
+    background-color:#fff;
+    background-color:rgba(221, 221, 221, 0.8);
+    display: none;
+}
+.number-box.active{
+    display: block;
+}
+.number-box li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    height: 40px;
+
+}
+.number-box li i{
+    position: relative!important;
+    left: 0!important;
+    margin-right: 0!important;
+    padding-left: 0;
+    cursor: pointer;
+}
+.number-left{
+    width: 60%;
+}
+.number-right{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.number-close{
+    position: relative!important;
+    font-size: 22px;
+    cursor: pointer;
+}
+/*-----------------------------end người-----------------------*/
+
+
+/*  .search{
+    position: relative;
+
+}
+.search-content-items{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgba(221, 221, 221, 0.5);
+    padding: 12px;
+    border-radius: 5px;
+
+}
+.search-content-item{
+    height: 50px;
+    background-color: #fff;
+    width: 19%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.search-content-item input{
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.search-content-item i{
+    color: #ffc0cb;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+.search-content-item:last-child{
+    width: 130px;
+}
+.search-content-item button{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: #ffc0cb;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+.search-content-item button:hover{
+    background-color: #fff0f5;
+}
+        địa điểm
+.autobox{
+    position: absolute;
+    top: 100%;
+    width: 19%;
+    background-color:#fff;
+    background-color:rgba(221, 221, 221, 0.5);
+    overflow-y: auto;
+}
+.autobox li{
+    list-style: none;
+    padding: 6px 0px 6px 36px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    display: none;
+}
+.autobox li:hover{
+    color: #0000ff;
+}
+.autobox.active li{
+    display: block;
+}
+
+
+
+Ngày */
+
+
