@@ -95,7 +95,8 @@ function savetour()
                     email: email,
                     sdt: sdt,
                     date: date,
-                    people: people
+                    people: people,
+                    diadiem: diadiem
                 })
                 localStorage.setItem("Customer", JSON.stringify(ListCustomer))
                 renderCustomer();

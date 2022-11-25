@@ -11,7 +11,7 @@ function check(){
         if(user.value==us[i]){
             if(pass.value == pw[i]){
             alert("Đăng nhập thành công!");
-            window.location.href="./wc_travel.html";
+            window.location.href="./admin.html";
             exit();
             } else alert("Đăng nhập thất bại!");
                 exit();
