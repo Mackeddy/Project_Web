@@ -144,6 +144,9 @@ ul li{
 .star__rating p{
     font-size: 14px;
     color: #727272;
+    text-align: right;
+    width: 210px;
+    height: 10px;
 }
 .tour__price{
     margin-top: 20p;
@@ -152,6 +155,11 @@ ul li{
     display: flex;
     justify-content: space-between;
 }
+
+.price{
+    width: 100%;
+}
+
 .price p,
 .hours{
     font-size: 14px;
