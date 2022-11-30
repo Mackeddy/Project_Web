@@ -42,6 +42,7 @@ function showAdress (list){
         listData = list.join('')
     }
     autoBox.innerHTML = listData
+    console.log(autoBox);
 }
 
 let recomentlist =[
