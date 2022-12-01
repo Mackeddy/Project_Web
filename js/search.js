@@ -142,3 +142,5 @@ function totalNumber(){
     total = i + o + u
     inputNumber.value = total + " người"
  }
+
+
