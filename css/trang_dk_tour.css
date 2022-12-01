@@ -136,7 +136,7 @@ header{
 /*giua*/
 .div_giua_tren{
     width: 100%;
-    height: 10%;
+    height: auto;
 }
 .div_giua{
     width: 100%;
