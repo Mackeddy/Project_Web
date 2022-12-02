@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/css/tourvn.css">
+    <link rel="stylesheet" href="/css/searchtour.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Trong Nước</title>
@@ -42,7 +43,15 @@
             <div class="title">
                 <p><i style="font-size:30px ;" class="fa-duotone fa-camera-retro"></i>  <b>Tours In Vietnam</b></p>
             </div>
-            <div class="list_tour">
+            <section class="container">
+                <form>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="search-item" placeholder="Bạn muốn đến đâu?" 
+                    onkeyup="search()">
+                </form>
+                <!--dán phần div class="list_tour" vào đây-->
+            
+            <div class="list_tour" id="list_tour">
                 <div id="p1" class="slideshow">
                 <div class="in4_tour">
                     <div class="pic">
@@ -360,6 +369,7 @@
                         <h1>3,000,000 VNĐ / <i class="fa-solid fa-person"></i></h2>
                     </div>
                 </div>
+                </section>
             </div>
             </div>
             <div class="page">
@@ -411,5 +421,6 @@
             <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         </footer>
         <script src="/js/slide.js"></script>
+        <script src="/js/searchtour.js"></script>
 </body>
 </html>
